@@ -1,0 +1,18 @@
+@charset "utf-8";
+@import "reset";
+
+@function get_percent($size, $viewport: 375) {
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1%;
+}
+
+@function get_vw($size, $viewport: 375) {
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
+
+body {
+  img {
+    vertical-align: bottom;
+  }
+}
