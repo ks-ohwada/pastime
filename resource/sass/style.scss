@@ -11,8 +11,61 @@
   @return $rate * $size * 1vw;
 }
 
+@mixin font_family {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
 body {
   img {
     vertical-align: bottom;
+    width: 100%;
+  }
+}
+
+/////////////////////////////////
+// JavaScript 練習ページ
+/////////////////////////////////
+.practice {
+  @include font_family();
+
+  .l-intro {
+    width: 800px;
+    margin: 0 auto;
+    &__heading {
+      margin-top: 40px;
+      text-align: center;
+      color: #39dba8;
+      font-size: 22px;
+      border-bottom: 1px solid #39dba8;
+      padding-bottom: 40px;
+    }
+  }
+
+  .p-modules {
+    width: 800px;
+    margin: 40px auto 0;
+    &__title {
+      color: #39dba8;
+      font-size: 16px;
+      &:nth-of-type(n + 2) {
+        margin-top: 30px;
+      }
+    }
+    &__body {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
+  .c-app {
+    &__round_off--form {
+      display: flex;
+      justify-content: flex-start;
+    }
+    &__round_off--value {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 20px;
+    }
   }
 }
