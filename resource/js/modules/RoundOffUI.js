@@ -1,4 +1,4 @@
-export default class HelloUI {
+export default class RoundOffI {
   constructor() {
     this.$ = document.querySelector('.c-app__round_off--form');
     this.$formText = this.$.querySelector('.c-app__round_off--text');
